@@ -1,34 +1,25 @@
-import pandas as pd
+    Vendor Category Mismatch: The different vendors often categorise websites differently. A website categorised as "social media" in Blue Coat might be categorised differently in Palo Alto. This can lead to inconsistencies in filtering and access policies.
 
-def process_name(name):
-    """Reverse the order of first and last name and remove commas."""
-    parts = name.split(', ')
-    if len(parts) == 2:
-        return f"{parts[1]} {parts[0]}"
-    return name
+    Different Identity Platforms: The different vendors have different identity management solutions. This could lead to issues where some users are recognised differently or even not at all on one platform versus the other.
 
-# Read the two CSV files
-df1 = pd.read_csv('file1.csv')
-df2 = pd.read_csv('file2.csv')
+    Security Gaps: Maintaining two separate services means you have two configurations to keep in sync. Over time there is the risk of configuration drift. Configurations diverge due to manual changes, updates, or overlooked components. With the two services, there's a greater chance of misconfiguration or overlooked security settings, leading to potential vulnerabilities.
 
-# Process names in file1
-df1['Name'] = df1['Name'].apply(process_name)
+    Management Overhead: Running two systems simultaneously requires more administrative effort. Keeping both systems up-to-date would mean monitoring and implementing patches and updates for both Blue Coat and Palo Alto Networks, doubling the effort.
 
-# Extract the 'Name' columns
-names_1 = set(df1['Name'].dropna())
-names_2 = set(df2['Name'].dropna())
+    Increased Costs: There are costs associated with licensing, support contracts, and possibly hardware for both systems. This can be significant especially if one is only kept as a backup.
 
-# Find the common names, and the names unique to each list
-common_names = names_1.intersection(names_2)
-unique_to_1 = names_1 - names_2
-unique_to_2 = names_2 - names_1
+    Complex Troubleshooting: Having both systems in place could lead to complexities when troubleshooting. It might be unclear which service is causing an issue, leading to increased downtime or unresolved problems. The IT support staff would also need to be trained on both services, which could dilute the expertise on either platform.
 
-# Print out the results
-print(f"Total number of entries in file1.csv: {len(df1)}")
-print(f"Total number of entries in file2.csv: {len(df2)}")
-print(f"Total number of unique names in file1.csv: {len(names_1)}")
-print(f"Total number of unique names in file2.csv: {len(names_2)}")
-print(f"Number of names in both files: {len(common_names)}")
-print(f"Number of names unique to file1.csv: {len(unique_to_1)}")
-print(f"Number of names unique to file2.csv: {len(unique_to_2)}")
+    Inconsistent User Experience: Users may experience different web browsing behavior depending on which service they're currently going through. This could lead to confusion and increased IT Support Desk calls (As mentioned previously).
 
+    Inconsistent Reporting: Different platforms provide logs and reports in different formats and with different details. This can make it challenging to aggregate or compare data for analytics or auditing purposes.
+
+    Redundancy Confusion: If both services failover or have some other redundant setup, it might be unclear which system takes precedence in certain scenarios or how failover is managed between them.
+
+
+    Policy Alignment Issues: If there's a change in company policy regarding internet access (for example, allowing/blocking AI), it would need to be implemented on both platforms in different ways due to differing capabilities.
+
+    Latency Issues: Routing traffic through multiple proxies might introduce latency.
+
+    
+While maintaining both BlueCoat and Palo Alto Networks proxies for BCP might seem like a good idea for ensuring continuous access and security, the complexities and potential issues introduced by this setup might outweigh the benefits.
