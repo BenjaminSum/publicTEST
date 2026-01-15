@@ -1,56 +1,15 @@
 [
  {
-   "Title": "10 Things I Hate About You",
-   "TmdbId": 4951,
-   "ImdbId": "tt0147800",
-   "first_url": "https://image.tmdb.org/t/p/original/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg"
+   "title": "10 Things I Hate About You",
+   "tmdb_id": 4951,
+   "imdb_id": "tt0147800",
+   "poster_url": "https://image.tmdb.org/t/p/original/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg"
  },
  {
-   "Title": "101 Dalmatians",
-   "TmdbId": 11674,
-   "ImdbId": "tt0115433",
-   "first_url": "https://image.tmdb.org/t/p/original/8o2ADoAyG796UwTjwBFjPyBz0yG.jpg"
- },
- {
-   "Title": "12 Years a Slave",
-   "TmdbId": 76203,
-   "ImdbId": "tt2024544",
-   "first_url": "https://image.tmdb.org/t/p/original/xdANQijuNrJaw1HA61rDccME4Tm.jpg"
- },
- {
-   "Title": "17 Again",
-   "TmdbId": 16996,
-   "ImdbId": "tt0974661",
-   "first_url": "https://image.tmdb.org/t/p/original/yEcfFXEWpuXcfsR9nKESVCFneqV.jpg"
- },
- {
-   "Title": "2 Fast 2 Furious",
-   "TmdbId": 584,
-   "ImdbId": "tt0322259",
-   "first_url": "https://image.tmdb.org/t/p/original/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg"
- },
- {
-   "Title": "2012",
-   "TmdbId": 14161,
-   "ImdbId": "tt1190080",
-   "first_url": "https://image.tmdb.org/t/p/original/c2PkTPT5D9zB8SIm5wNlDAANEqM.jpg"
- },
- {
-   "Title": "21 Jump Street",
-   "TmdbId": 64688,
-   "ImdbId": "tt1232829",
-   "first_url": "https://image.tmdb.org/t/p/original/8v3Sqv9UcIUC4ebmpKWROqPBINZ.jpg"
- },
- {
-   "Title": "22 Jump Street",
-   "TmdbId": 187017,
-   "ImdbId": "tt2294449",
-   "first_url": "https://image.tmdb.org/t/p/original/850chzYHYbT3IISl6Q7dbBuFP2B.jpg"
- },
- {
-   "Title": "300",
-   "TmdbId": 1271,
-   "ImdbId": "tt0416449",
-   "first_url": "https://image.tmdb.org/t/p/original/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg"
+   "title": "101 Dalmatians",
+   "tmdb_id": 11674,
+   "imdb_id": "tt0115433",
+   "poster_url": "https://image.tmdb.org/t/p/original/8o2ADoAyG796UwTjwBFjPyBz0yG.jpg"
  }
 ]
+
